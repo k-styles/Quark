@@ -4,9 +4,10 @@
 #include <string.h> 
 #include <string>
 #include <openssl/sha.h>
-
 #include "blockchain.h"
 
+// Call your Blockchain and Block Object here
+// An exampe is provided here
 int main(int argc, char** argv){
     Blockchain blockchain("Alice", "bob", 30);
 
