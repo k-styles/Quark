@@ -1,0 +1,98 @@
+Build started at 2022-08-07T13:29:50.840619
+Main binary: /home/styles/anaconda3/bin/python
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 0.63.0
+Source dir: /home/styles/blockchain/Quark Blockchain
+Build dir: /home/styles/blockchain/Quark Blockchain/build
+Build type: native build
+Project name: QuarkChain
+Project version: 1.0.0
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ sanitycheckcpp.cc -o sanitycheckcpp.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/styles/blockchain/Quark Blockchain/build/meson-private/sanitycheckcpp.exe
+C++ compiler for the host machine: c++ (gcc 11.2.0 "c++ (Ubuntu 11.2.0-19ubuntu1) 11.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.38
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ sanitycheckcpp.cc -o sanitycheckcpp.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/styles/blockchain/Quark Blockchain/build/meson-private/sanitycheckcpp.exe
+C++ compiler for the build machine: c++ (gcc 11.2.0 "c++ (Ubuntu 11.2.0-19ubuntu1) 11.2.0")
+C++ linker for the build machine: c++ ld.bfd 2.38
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Pkg-config binary for 1 is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: /usr/bin/pkg-config (0.29.2)
+Determining dependency 'openssl' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion openssl` -> 0
+3.0.2
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags openssl` -> 0
+
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs openssl` -> 0
+-L/usr/lib/x86_64-linux-gnu -lssl -lcrypto
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs openssl` -> 0
+-lssl -lcrypto
+Running compile:
+Working directory:  /home/styles/blockchain/Quark Blockchain/build/meson-private/tmpd87nbonp
+Command line:  c++ /home/styles/blockchain/Quark Blockchain/build/meson-private/tmpd87nbonp/testfile.cpp -o /home/styles/blockchain/Quark Blockchain/build/meson-private/tmpd87nbonp/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/styles/blockchain/Quark Blockchain/build/meson-private/tmpaptapfrs
+Command line:  c++ /home/styles/blockchain/Quark Blockchain/build/meson-private/tmpaptapfrs/testfile.cpp -o /home/styles/blockchain/Quark Blockchain/build/meson-private/tmpaptapfrs/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/11/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/11/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/11/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+Run-time dependency openssl found: YES 3.0.2
+Build targets in project: 2
+
+Found ninja-1.10.2.git.kitware.jobserver-1 at /home/styles/anaconda3/bin/ninja
