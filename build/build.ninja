@@ -21,7 +21,7 @@ rule cpp_LINKER
  description = Linking target $out
 
 rule SHSYM
- command = /home/styles/anaconda3/bin/meson --internal symbolextractor '/home/styles/blockchain/Quark$ Blockchain/build' $in $IMPLIB $out $CROSS
+ command = /home/styles/anaconda3/bin/meson --internal symbolextractor /home/styles/blockchain/Quark/build $in $IMPLIB $out $CROSS
  description = Generating symbol file $out
  restat = 1
 
@@ -33,7 +33,7 @@ rule CUSTOM_COMMAND
  restat = 1
 
 rule REGENERATE_BUILD
- command = /home/styles/anaconda3/bin/meson --internal regenerate '/home/styles/blockchain/Quark$ Blockchain' '/home/styles/blockchain/Quark$ Blockchain/build' --backend ninja
+ command = /home/styles/anaconda3/bin/meson --internal regenerate /home/styles/blockchain/Quark /home/styles/blockchain/Quark/build --backend ninja
  description = Regenerating build files.
  generator = 1
 
@@ -70,7 +70,7 @@ build quark.p/main.cc.o: cpp_COMPILER ../main.cc
  ARGS = -Iquark.p -I. -I.. -Iinclude -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g
 
 build quark: cpp_LINKER quark.p/main.cc.o | src/libquarksrc.so.p/libquarksrc.so.symbols
- LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined '-Wl,-rpath,$$ORIGIN/src' '-Wl,-rpath-link,/home/styles/blockchain/Quark$ Blockchain/build/src' -Wl,--start-group src/libquarksrc.so -Wl,--end-group
+ LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined '-Wl,-rpath,$$ORIGIN/src' -Wl,-rpath-link,/home/styles/blockchain/Quark/build/src -Wl,--start-group src/libquarksrc.so -Wl,--end-group
 
 # Test rules
 

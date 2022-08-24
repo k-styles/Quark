@@ -8,10 +8,10 @@
 #include "block.h"
 
 // ***************************************************** Methods ************************************************* //
-Block::Block(long long unsigned int& index, std::string& timestamp, utils::Data& data, unsigned char*& prevHash){
+Block::Block(long long unsigned int& index, utils::Data& data, unsigned char*& prevHash){
     this->index     = index;
     this->data      = data;
-    this->timestamp = timestamp;
+    this->timestamp = utils::getTimestamp();
     strcpy((char*)this->prevHash, (char*)prevHash);
     this->calculateHash();
     //strcpy((char*)this->hash, (char*)hash); 

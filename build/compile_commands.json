@@ -1,24 +1,24 @@
 [
   {
-    "directory": "/home/styles/blockchain/Quark Blockchain/build",
+    "directory": "/home/styles/blockchain/Quark/build",
     "command": "c++ -Isrc/libquarksrc.so.p -Isrc -I../src -Iinclude -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -fPIC -MD -MQ src/libquarksrc.so.p/blockchain.cc.o -MF src/libquarksrc.so.p/blockchain.cc.o.d -o src/libquarksrc.so.p/blockchain.cc.o -c ../src/blockchain.cc",
     "file": "../src/blockchain.cc",
     "output": "src/libquarksrc.so.p/blockchain.cc.o"
   },
   {
-    "directory": "/home/styles/blockchain/Quark Blockchain/build",
+    "directory": "/home/styles/blockchain/Quark/build",
     "command": "c++ -Isrc/libquarksrc.so.p -Isrc -I../src -Iinclude -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -fPIC -MD -MQ src/libquarksrc.so.p/block.cc.o -MF src/libquarksrc.so.p/block.cc.o.d -o src/libquarksrc.so.p/block.cc.o -c ../src/block.cc",
     "file": "../src/block.cc",
     "output": "src/libquarksrc.so.p/block.cc.o"
   },
   {
-    "directory": "/home/styles/blockchain/Quark Blockchain/build",
+    "directory": "/home/styles/blockchain/Quark/build",
     "command": "c++ -Isrc/libquarksrc.so.p -Isrc -I../src -Iinclude -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -fPIC -MD -MQ src/libquarksrc.so.p/utils.cc.o -MF src/libquarksrc.so.p/utils.cc.o.d -o src/libquarksrc.so.p/utils.cc.o -c ../src/utils.cc",
     "file": "../src/utils.cc",
     "output": "src/libquarksrc.so.p/utils.cc.o"
   },
   {
-    "directory": "/home/styles/blockchain/Quark Blockchain/build",
+    "directory": "/home/styles/blockchain/Quark/build",
     "command": "c++ -Iquark.p -I. -I.. -Iinclude -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -MD -MQ quark.p/main.cc.o -MF quark.p/main.cc.o.d -o quark.p/main.cc.o -c ../main.cc",
     "file": "../main.cc",
     "output": "quark.p/main.cc.o"

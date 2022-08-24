@@ -16,10 +16,9 @@ Blockchain::Blockchain(std::string debtor, std::string creditor, long long int m
     data.debtor         = debtor;
     data.creditor       = creditor;
     long long unsigned initialIndex = 0;
-    std::string firstTimeStamp = utils::getTimestamp();
     const char* zeroConstCharArr = "0";
     unsigned char* zeroHash = (unsigned char*)zeroConstCharArr;
-    Block* genesisBlock = new Block(initialIndex, firstTimeStamp, data, zeroHash);
+    Block* genesisBlock = new Block(initialIndex, data, zeroHash);
     (this->chain).push_back(*genesisBlock);
     this->blockCount++;
 }

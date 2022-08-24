@@ -1,11 +1,11 @@
-Build started at 2022-08-07T13:29:50.840619
+Build started at 2022-08-24T15:22:28.334852
 Main binary: /home/styles/anaconda3/bin/python
 Build Options: 
 Python system: Linux
 The Meson build system
 Version: 0.63.0
-Source dir: /home/styles/blockchain/Quark Blockchain
-Build dir: /home/styles/blockchain/Quark Blockchain/build
+Source dir: /home/styles/blockchain/Quark
+Build dir: /home/styles/blockchain/Quark/build
 Build type: native build
 Project name: QuarkChain
 Project version: 1.0.0
@@ -18,7 +18,7 @@ Sanity check compile stdout:
 Sanity check compile stderr:
 
 -----
-Running test binary command: /home/styles/blockchain/Quark Blockchain/build/meson-private/sanitycheckcpp.exe
+Running test binary command: /home/styles/blockchain/Quark/build/meson-private/sanitycheckcpp.exe
 C++ compiler for the host machine: c++ (gcc 11.2.0 "c++ (Ubuntu 11.2.0-19ubuntu1) 11.2.0")
 C++ linker for the host machine: c++ ld.bfd 2.38
 Sanity testing C++ compiler: c++
@@ -30,7 +30,7 @@ Sanity check compile stdout:
 Sanity check compile stderr:
 
 -----
-Running test binary command: /home/styles/blockchain/Quark Blockchain/build/meson-private/sanitycheckcpp.exe
+Running test binary command: /home/styles/blockchain/Quark/build/meson-private/sanitycheckcpp.exe
 C++ compiler for the build machine: c++ (gcc 11.2.0 "c++ (Ubuntu 11.2.0-19ubuntu1) 11.2.0")
 C++ linker for the build machine: c++ ld.bfd 2.38
 Build machine cpu family: x86_64
@@ -58,8 +58,8 @@ env[PKG_CONFIG_PATH]:
 Called `/usr/bin/pkg-config --libs openssl` -> 0
 -lssl -lcrypto
 Running compile:
-Working directory:  /home/styles/blockchain/Quark Blockchain/build/meson-private/tmpd87nbonp
-Command line:  c++ /home/styles/blockchain/Quark Blockchain/build/meson-private/tmpd87nbonp/testfile.cpp -o /home/styles/blockchain/Quark Blockchain/build/meson-private/tmpd87nbonp/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+Working directory:  /home/styles/blockchain/Quark/build/meson-private/tmpcqlqyn67
+Command line:  c++ /home/styles/blockchain/Quark/build/meson-private/tmpcqlqyn67/testfile.cpp -o /home/styles/blockchain/Quark/build/meson-private/tmpcqlqyn67/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
 
 Code:
  #include<stdio.h>
@@ -80,8 +80,8 @@ Program stderr:
 
 
 Running compile:
-Working directory:  /home/styles/blockchain/Quark Blockchain/build/meson-private/tmpaptapfrs
-Command line:  c++ /home/styles/blockchain/Quark Blockchain/build/meson-private/tmpaptapfrs/testfile.cpp -o /home/styles/blockchain/Quark Blockchain/build/meson-private/tmpaptapfrs/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+Working directory:  /home/styles/blockchain/Quark/build/meson-private/tmp8prb17si
+Command line:  c++ /home/styles/blockchain/Quark/build/meson-private/tmp8prb17si/testfile.cpp -o /home/styles/blockchain/Quark/build/meson-private/tmp8prb17si/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
 
 Code:
  

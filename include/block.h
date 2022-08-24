@@ -17,7 +17,7 @@ class Block
     
     public:
         std::string timestamp;
-        Block(long long unsigned int&, std::string&, utils::Data&, unsigned char*&);
+        Block(long long unsigned int&, utils::Data&, unsigned char*&);
         long long unsigned int index;
     
     //friend class Blockchain;
