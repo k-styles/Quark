@@ -12,10 +12,11 @@ class Blockchain
 {
     private:
         long long unsigned int blockCount = 0;
-        std::vector<Block> chain;
+        std::vector<Block*> chain;
 
     public:
         Blockchain(std::string, std::string, long long int);
-        Block getLatestBlock();
+        Block* getLatestBlock();
         bool addNewBlock(Block);
+        bool addNewBlock(Block*);
 };

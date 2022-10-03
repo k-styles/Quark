@@ -8,19 +8,34 @@
 #include "block.h"
 
 // ***************************************************** Methods ************************************************* //
-Block::Block(long long unsigned int& index, utils::Data& data, unsigned char*& prevHash){
-    this->index     = index;
-    this->data      = data;
-    this->timestamp = utils::getTimestamp();
-    strcpy((char*)this->prevHash, (char*)prevHash);
+Block::Block(utils::Data& data){
+    this->index     = 0;
+    *this->data     = data;
+    this->header->timestamp = utils::getTimestamp();
+    // Initialize hash to zero hash of a newly created block
+    const char* zeroConstCharArr = "0";
+    unsigned char* zeroHash = (unsigned char*)zeroConstCharArr;
+    strcpy((char*)this->header->prevHash, (char*)zeroHash);
+    // Calculate hash of the block in creation
     this->calculateHash();
-    //strcpy((char*)this->hash, (char*)hash); 
+}
+
+Block::Block(utils::Data*& dataPtr){
+    this->index     = 0;
+    this->data     = dataPtr;
+    this->header->timestamp = utils::getTimestamp();
+    // Initialize hash to zero hash of a newly created block
+    const char* zeroConstCharArr = "0";
+    unsigned char* zeroHash = (unsigned char*)zeroConstCharArr;
+    strcpy((char*)this->header->prevHash, (char*)zeroHash);
+    // Calculate hash of the block in creation
+    this->calculateHash();
 }
 
 bool Block::calculateHash(){
     // Calculate hash and set it to hash variable
     std::string stringStruct = this->data.toString();
     unsigned long long int len = strlen(stringStruct.c_str());
-    SHA256((unsigned char*)stringStruct.c_str(), len, this->hash);
+    SHA256((unsigned char*)stringStruct.c_str(), len, this->header->hash);
     return true;
 }

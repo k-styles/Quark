@@ -14,9 +14,8 @@ int main(int argc, char** argv){
     std::cout << (blockchain.getLatestBlock()).data.toString() << "\n";
 
     utils::Data newData{1, "Leonard", "Sheldon"};    
-    long long unsigned int newIndex = 1;
-    unsigned char* prevBlockHash = blockchain.getLatestBlock().hash;
-    Block newBlock(newIndex, newData, prevBlockHash);
+    //unsigned char* prevBlockHash = blockchain.getLatestBlock().hash;
+    Block newBlock(newData);
     blockchain.addNewBlock(newBlock);
 
     std::cout << (blockchain.getLatestBlock()).data.toString() << "\n";
